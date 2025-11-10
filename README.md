@@ -5,7 +5,7 @@ As you can see, the last update was published almost a year ago, and with that I
 
 [![NPM version](https://img.shields.io/npm/v/@jadestudios/discord-music-player.svg)](https://www.npmjs.com/package/@jadestudios/discord-music-player)
 [![Downloads](https://img.shields.io/npm/dm/@jadestudios/discord-music-player.svg)](https://www.npmjs.com/package/@jadestudios/discord-music-player)
-[![CodeQL](https://github.com/jadestudios/discord-music-player/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jadestudios/discord-music-player/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/BennyDaBee/discord-music-player/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/BennyDaBee/discord-music-player/actions/workflows/codeql-analysis.yml)
 
 This is a fork of Discord Music Player (DMP) by SushiBtw. The reason behind the existence of this fork is as follows: 
 
