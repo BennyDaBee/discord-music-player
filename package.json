@@ -28,7 +28,7 @@
   },
   "private": false,
   "publishConfig": {
-    "acess": "public"
+    "access": "public"
   },
   "homepage": "https://discord-music-player.js.org/",
   "author": "thenerdoflight",
