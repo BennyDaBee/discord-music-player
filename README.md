@@ -1,5 +1,3 @@
-Thank you everyone for your support and bug reports for the past 3 years of me maintaining this fork.
-
 # @bennythebee/Discord-Music-Player
 
 [![NPM version](https://img.shields.io/npm/v/@bennydabee/discord-music-player.svg)](https://www.npmjs.com/package/@bennydabee/discord-music-player)
