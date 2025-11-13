@@ -1,7 +1,7 @@
 Thank you everyone for your support and bug reports for the past 3 years of me maintaining this fork.
 As you can see, the last update was published almost a year ago, and with that I'll be archiving this repo on September 1 2025.
 
-# @jadestudios/Discord-Music-Player
+# @bennythebee/Discord-Music-Player
 
 [![NPM version](https://img.shields.io/npm/v/@bennydabee/discord-music-player.svg)](https://www.npmjs.com/package/@bennydabee/discord-music-player)
 [![Downloads](https://img.shields.io/npm/dm/@bennydabee/discord-music-player.svg)](https://www.npmjs.com/package/@bennydabee/discord-music-player)
