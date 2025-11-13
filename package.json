@@ -20,10 +20,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jadestudios/discord-music-player.git"
+    "url": "git+https://github.com/BennyDaBee/discord-music-player.git"
   },
   "bugs": {
-    "url": "https://github.com/jadestudios/discord-music-player/issues"
+    "url": "https://github.com/BennyDaBee/discord-music-player/issues"
   },
   "homepage": "https://discord-music-player.js.org/",
   "author": "thenerdoflight",
