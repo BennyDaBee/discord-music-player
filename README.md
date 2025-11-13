@@ -18,7 +18,7 @@ Just that Git will say that I am not behind on any commits.
 ---
 
 ### Major differences within this fork
-* Using @distube/ytdl-core instead of ytdl-core
+* -Using @distube/ytdl-core instead of ytdl-core-
 * Using @distube/ytsr instead of node-ytsr
 * Built-in Apple Music link support
 * More search queries to ensure song is valid
