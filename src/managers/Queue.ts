@@ -273,7 +273,7 @@ export class Queue<T = unknown> {
                 filter: 'audioonly',
                 quality: quality!.toLowerCase() === "low" ? 'lowestaudio' : "highestaudio",
                 highWaterMark: 1 << 25,
-                playerClients: ["WEB_EMBEDED", "IOS", "ANDROID", "WEB"]
+                playerClients: ["WEB_EMBEDDED", "IOS", "ANDROID", "WEB"]
             });
             i++;
         }
