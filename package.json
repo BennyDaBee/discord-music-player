@@ -28,7 +28,8 @@
   },
   "private": false,
   "publishConfig": {
-    "acess": "public",
+    "acess": "public"
+  },
   "homepage": "https://discord-music-player.js.org/",
   "author": "thenerdoflight",
   "license": "MIT",
