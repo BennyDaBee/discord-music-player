@@ -1,52 +1,23 @@
 name: Release to NPM
 
-on:
-  release:
-    types: [published]  # Only runs when you publish a Release in GitHub (creates the tag)
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read  # Sufficient for checkout and reading the tag
-
     steps:
-      - name: Checkout code at release tag
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0  # Ensures tag is available and full history if needed
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: "lts/*"
-          registry-url: https://registry.npmjs.org/@bennythebee/discord-music-player  # Required when using NPM_TOKEN
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Verify dependency signatures
-        run: npm audit signatures
-
-      - name: Set version from GitHub release tag and publish to NPM
+      - run: npm ci
+      - run: npm run build
+      - run: npm audit signatures
+      - name: Release to NPM
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_REF_NAME: ${{ github.ref_name }}  # e.g., "v1.2.3" or "1.2.3"
-        run: |
-          # Extract clean semver version (strip leading 'v' if present)
-          VERSION=$(echo "$GITHUB_REF_NAME" | sed 's/^v//')
-
-          # Validate it's a proper semver (basic check)
-          if ! echo "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?(\+[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$'; then
-            echo "Error: Tag '$GITHUB_REF_NAME' does not appear to be a valid semver version."
-            exit 1
-          fi
-
-          # Force update package.json version without creating a git tag/commit
-          npm version $VERSION --no-git-tag-version
-
-          # Publish to npm
-          npm publish --access public  # Remove --access public if package is scoped/private
+        run: npx semantic-release
