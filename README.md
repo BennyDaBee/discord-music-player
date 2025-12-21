@@ -25,7 +25,7 @@ Just that Git will say that I am not behind on any commits.
 * Added event emits for all errors
 * Changed internal Youtube URL regex
 * Basic filter support - I don't intend to expand more on this
-* idk
+* idk please help
 
 ---
  
