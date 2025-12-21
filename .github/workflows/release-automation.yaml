@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: "lts/*"
-          registry-url: https://registry.npmjs.org/  # Required when using NPM_TOKEN
+          registry-url: https://registry.npmjs.org/@bennythebee/discord-music-player  # Required when using NPM_TOKEN
 
       - name: Install dependencies
         run: npm ci
